@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E3C6A5</color>
+    <color name="colorPrimaryDark">#7F5834</color>
+    <color name="colorAccent">#F15A24</color>
+    <color name="sumo_normal">#89643D</color>
+    <color name="sumo_edge">#C69C6D</color>
+    <color name="color_light">#FFF5EA</color>
+</resources>

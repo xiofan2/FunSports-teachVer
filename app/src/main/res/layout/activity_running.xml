@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/running_edge"
+    tools:context=".activities.RunningActivity">
+
+    <ImageButton
+        android:id="@+id/yellow_right_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:focusable="true"
+        android:onClick="onClickYellowRight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:srcCompat="@drawable/yellow_right_btn" />
+
+    <ImageButton
+        android:id="@+id/blue_right_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:focusable="true"
+        android:onClick="onClickBlueRight"
+        app:layout_constraintEnd_toStartOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/blue_right_btn" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:background="@color/color_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/destination_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/destination" />
+
+    <ImageButton
+        android:id="@+id/yellow_left_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:focusable="true"
+        android:onClick="onClickYellowLeft"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/yellow_left_btn" />
+
+    <ImageButton
+        android:id="@+id/blue_left_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:focusable="true"
+        android:onClick="onClickBlueLeft"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/blue_left_btn" />
+
+    <ImageButton
+        android:id="@+id/yellow_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/yellow_man" />
+
+    <ImageButton
+        android:id="@+id/blue_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:srcCompat="@drawable/blue_man" />
+
+    <ImageButton
+        android:id="@+id/yellow_more"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:focusable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/yellow_right_btn"
+        app:layout_constraintStart_toEndOf="@+id/yellow_right_btn"
+        android:onClick="showMenu"
+        app:srcCompat="@drawable/ic_baseline_more_running" />
+
+    <ImageButton
+        android:id="@+id/blue_more"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:focusable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/blue_right_btn"
+        app:layout_constraintTop_toBottomOf="@+id/blue_right_btn"
+        android:onClick="showMenu"
+        app:srcCompat="@drawable/ic_baseline_more_running" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

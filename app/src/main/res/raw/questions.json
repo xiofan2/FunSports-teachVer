@@ -1,0 +1,10 @@
+[{
+    "question":"问题1",
+    "choices":["test1","test2","test3", "test4"],
+    "answer":"A"
+},
+{
+    "question":"问题2",
+    "choices":["test1","test2","test3", "test4"],
+    "answer":"B"
+}]
